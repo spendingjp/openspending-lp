@@ -1,0 +1,46 @@
+// Whats New
+// --------------------------------------------------
+
+.whats-new {
+  margin-bottom: $margin-small-vertical;
+  max-width: 100%;
+  width: 100%;
+  border: 1px solid $table-border-color;
+
+  // Cells
+  thead,
+  tbody,
+  tfoot {
+    > tr {
+      > th,
+      > td {
+        padding: $margin-small-horizontal;
+        border-right: 1px solid $table-border-color;
+        vertical-align: top;
+      }
+    }
+  }
+
+  thead > tr > th {
+    border-bottom: 1px solid $table-border-color;
+    font-size: $font-size-medium;
+    color: $dark-blue;
+    width: 50%;
+  }
+
+  tbody > tr > td {
+    border-bottom: 1px dotted $table-border-color;
+    text-align: left;
+  }
+}
+
+.whats-new__date {
+  display: block;
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+
+.whats-new__all_history {
+  margin-bottom: $margin-large-vertical;
+  text-align: left;
+}
