@@ -16,6 +16,7 @@
         <a href="https://tsukubashi.spending.jp/">
           <nuxt-img src="/images/tsukuba.png" alt="つくば市" width="400" />
         </a>
+        <government-map></government-map>
       </div>
     </div>
     <div class="container">
@@ -39,7 +40,11 @@
 </template>
 
 <script>
-export default {}
+import GovernmentMap from './GovernmentMap.vue'
+
+export default {
+  components: { GovernmentMap },
+}
 </script>
 
 <style></style>
