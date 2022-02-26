@@ -7,6 +7,11 @@
             url="http://{s}.tile.osm.org/{z}/{x}/{y}.png"
             attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>'
           ></l-tile-layer>
+          <map-icon
+            v-for="g in governments"
+            :key="g.id"
+            :government="g"
+          ></map-icon>
         </l-map>
       </client-only>
     </div>
@@ -14,8 +19,11 @@
 </template>
 
 <script lang="ts">
+import MapIcon from './MapIcon.vue'
 import { Government } from '@/types/government'
+
 export default {
+  components: { MapIcon },
   props: {
     governments: {
       type: Array as () => Government[],
