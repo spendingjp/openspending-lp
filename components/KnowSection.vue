@@ -11,12 +11,9 @@
       </h2>
       <div class="section__lead">
         現在、
-        <span class="js-city-num"> </span>
-        つくば市のサイトが立ち上がっています。<br />
-        <a href="https://tsukubashi.spending.jp/">
-          <nuxt-img src="/images/tsukuba.png" alt="つくば市" width="400" />
-        </a>
-        <government-map></government-map>
+        <span class="js-city-num">{{ `${governments.length}` }} </span>
+        自治体のサイトが立ち上がっています。<br />
+        <government-map :governments="governments"></government-map>
       </div>
     </div>
     <div class="container">
@@ -39,11 +36,18 @@
   </section>
 </template>
 
-<script>
+<script lang="ts">
 import GovernmentMap from './GovernmentMap.vue'
+import { Government } from '@/types/government'
 
 export default {
   components: { GovernmentMap },
+  props: {
+    governments: {
+      type: Array as () => Government[],
+      required: true,
+    },
+  },
 }
 </script>
 

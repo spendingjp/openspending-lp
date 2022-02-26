@@ -1,6 +1,5 @@
 <template>
   <div class="site-selector">
-    <select id="js-site-selector"></select>
     <div id="map" class="map">
       <client-only>
         <l-map :zoom="6" :center="[36.67740687825185, 136.71395820379257]">
@@ -14,8 +13,15 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
+import { Government } from '@/types/government'
 export default {
+  props: {
+    governments: {
+      type: Array as () => Government[],
+      required: true,
+    },
+  },
 }
 </script>
 
