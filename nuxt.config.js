@@ -40,7 +40,11 @@ export default {
 
   publicRuntimeConfig: {
     axios: {
-      baseURL: process.env.API_URL || '/',
+      baseURL: process.env.API_URL,
+    },
+    siteUrlResolver: {
+      domain: process.env.SITE_URL_DOMAIN,
+      protocol: process.env.SITE_URL_PROTOCOL || 'https',
     },
   },
 
