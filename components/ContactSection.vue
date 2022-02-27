@@ -2,7 +2,7 @@
   <section id="contact" class="section--turquoise">
     <div class="container">
       <h2 class="heading">
-        <nuxt-img
+        <img
           src="/images/contact_tit.png"
           alt="お問い合わせ"
           width="344"

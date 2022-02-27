@@ -2,7 +2,7 @@
   <section id="library" class="section">
     <div class="container">
       <h2 class="heading">
-        <nuxt-img
+        <img
           src="/images/library_tit.png"
           alt="ライブラリー"
           width="344"

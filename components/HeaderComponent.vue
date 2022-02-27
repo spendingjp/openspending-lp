@@ -2,7 +2,7 @@
   <header class="header" role="banner">
     <div class="container">
       <h1 class="header__title">
-        <nuxt-img
+        <img
           src="/images/title.png"
           alt="税金はどこへ行った？ - WHERE DOES MY MONEY GO? -"
           width="788"
@@ -11,7 +11,7 @@
       </h1>
       <nav class="nav-buttons">
         <a href="./#know">
-          <nuxt-img
+          <img
             src="/images/hero_btn_know.png"
             alt="あなたの税金の使い道を知る"
             class="nav-button"

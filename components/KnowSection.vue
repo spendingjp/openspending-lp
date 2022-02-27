@@ -2,7 +2,7 @@
   <section id="know" class="section">
     <div class="container">
       <h2 class="heading">
-        <nuxt-img
+        <img
           src="/images/know_tit.png"
           alt="あなたの税金の使い道を知る"
           width="344"
