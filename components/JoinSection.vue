@@ -2,7 +2,7 @@
   <section id="join" class="section--turquoise">
     <div class="container">
       <h2 class="heading">
-        <nuxt-img
+        <img
           src="/images/join_tit.png"
           alt="プロジェクトに参加する"
           width="344"

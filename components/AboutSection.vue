@@ -2,7 +2,7 @@
   <section id="about" class="section--turquoise">
     <div class="container">
       <h2 class="heading">
-        <nuxt-img
+        <img
           src="/images/about_tit.png"
           alt="このプロジェクトについて"
           width="344"
