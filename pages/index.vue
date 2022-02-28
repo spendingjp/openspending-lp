@@ -22,7 +22,7 @@ export default Vue.extend({
   },
   async asyncData({ $axios }) {
     const governments = (
-      await $axios.get<GovernmentListResponse>('/api/v1/governments/')
+      await $axios.get<GovernmentListResponse>('/api/v1/governments/?hasDefaultBudget')
     ).data.results
     return { governments }
   },
